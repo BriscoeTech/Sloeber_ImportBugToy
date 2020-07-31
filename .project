@@ -32,11 +32,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>Samd51_DmaTest.ino</name>
-			<type>1</type>
-			<location>C:/Users/Scott/Documents/My Projects/Arduino/Cores/Adafruit ArduinoCore-samd/libraries/SPI/examples/zerodma_spi1/zerodma_spi1.ino</location>
-		</link>
-		<link>
 			<name>core/core</name>
 			<type>2</type>
 			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/adafruit/hardware/samd/1.5.14/cores/arduino</locationURI>
@@ -49,12 +44,12 @@
 		<link>
 			<name>libraries/Adafruit_ZeroDMA</name>
 			<type>2</type>
-			<location>C:/Users/Scott/Documents/My Projects/Arduino/Cores/Adafruit ArduinoCore-samd/libraries/Adafruit_ZeroDMA</location>
+			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/adafruit/hardware/samd/1.5.14/libraries/Adafruit_ZeroDMA</locationURI>
 		</link>
 		<link>
 			<name>libraries/SPI</name>
 			<type>2</type>
-			<location>C:/Users/Scott/Documents/My Projects/Arduino/Cores/Adafruit ArduinoCore-samd/libraries/SPI</location>
+			<locationURI>PROJECT_LOC/libraries/SPI</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

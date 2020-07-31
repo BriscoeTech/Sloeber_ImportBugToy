@@ -34,7 +34,6 @@ CPP_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-. \
 core\core \
 core\core\TinyUSB\Adafruit_TinyUSB_ArduinoCore \
 core\core\TinyUSB\Adafruit_TinyUSB_ArduinoCore\tinyusb\src\class\cdc \
@@ -68,4 +67,5 @@ core\core\avr \
 core\variant \
 libraries\Adafruit_ZeroDMA \
 libraries\SPI \
+. \
 

@@ -81,39 +81,39 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 AR += \
-C:\sloeber-workspace\Samd51_DmaTest\Release\arduino.ar \
+C:\sloeber-workspace\Sloeber_ImportBugToy\Release\arduino.ar \
 
 ELF += \
-Samd51_DmaTest.elf \
+Sloeber_ImportBugToy.elf \
 
 HEX += \
-Samd51_DmaTest.hex \
+Sloeber_ImportBugToy.hex \
 
 
 # All Target
-all: Samd51_DmaTest
+all: Sloeber_ImportBugToy
 
 # Tool invocations
-Samd51_DmaTest: $(HEX)
+Sloeber_ImportBugToy: $(HEX)
 	@echo 'Building target: $@'
 	@echo 'Printing size:'
-	"C:\sloeber\arduinoPlugin\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4/bin/arm-none-eabi-size" -A "C:/sloeber-workspace/Samd51_DmaTest/Release/Samd51_DmaTest.elf"
+	"C:\sloeber\arduinoPlugin\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4/bin/arm-none-eabi-size" -A "C:/sloeber-workspace/Sloeber_ImportBugToy/Release/Sloeber_ImportBugToy.elf"
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-C:\sloeber-workspace\Samd51_DmaTest\Release\arduino.ar: $(AR_OBJ)
+C:\sloeber-workspace\Sloeber_ImportBugToy\Release\arduino.ar: $(AR_OBJ)
 	@echo 'Starting archiver'
-	"C:\sloeber\arduinoPlugin\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4/bin/arm-none-eabi-ar" rcs     C:/sloeber-workspace/Samd51_DmaTest/Release/arduino.ar $(AR_OBJ)
+	"C:\sloeber\arduinoPlugin\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4/bin/arm-none-eabi-ar" rcs     C:/sloeber-workspace/Sloeber_ImportBugToy/Release/arduino.ar $(AR_OBJ)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Samd51_DmaTest.elf: $(LINK_OBJ) $(AR)
+Sloeber_ImportBugToy.elf: $(LINK_OBJ) $(AR)
 	@echo 'Starting combiner'
-	"C:\sloeber\arduinoPlugin\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4/bin/arm-none-eabi-g++"  "-LC:/sloeber-workspace/Samd51_DmaTest/Release" -Os -Wl,--gc-sections -save-temps  "-TC:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\variants\metro_m4/linker_scripts/gcc/flash_with_bootloader.ld" "-Wl,-Map,C:/sloeber-workspace/Samd51_DmaTest/Release/Samd51_DmaTest.map" --specs=nano.specs --specs=nosys.specs -mcpu=cortex-m4 -mthumb -Wl,--cref -Wl,--check-sections -Wl,--gc-sections -Wl,--unresolved-symbols=report-all -Wl,--warn-common -Wl,--warn-section-align -o "C:/sloeber-workspace/Samd51_DmaTest/Release/Samd51_DmaTest.elf"   $(LINK_OBJ)   -Wl,--start-group "-LC:\sloeber\arduinoPlugin\packages\arduino\tools\CMSIS\4.5.0/CMSIS/Lib/GCC/" "-LC:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\variants\metro_m4" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16 "-LC:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\variants\metro_m4" -lm  C:/sloeber-workspace/Samd51_DmaTest/Release/arduino.ar  -Wl,--end-group
+	"C:\sloeber\arduinoPlugin\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4/bin/arm-none-eabi-g++"  "-LC:/sloeber-workspace/Sloeber_ImportBugToy/Release" -Os -Wl,--gc-sections -save-temps  "-TC:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\variants\metro_m4/linker_scripts/gcc/flash_with_bootloader.ld" "-Wl,-Map,C:/sloeber-workspace/Sloeber_ImportBugToy/Release/Sloeber_ImportBugToy.map" --specs=nano.specs --specs=nosys.specs -mcpu=cortex-m4 -mthumb -Wl,--cref -Wl,--check-sections -Wl,--gc-sections -Wl,--unresolved-symbols=report-all -Wl,--warn-common -Wl,--warn-section-align -o "C:/sloeber-workspace/Sloeber_ImportBugToy/Release/Sloeber_ImportBugToy.elf"   $(LINK_OBJ)   -Wl,--start-group "-LC:\sloeber\arduinoPlugin\packages\arduino\tools\CMSIS\4.5.0/CMSIS/Lib/GCC/" "-LC:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\variants\metro_m4" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16 "-LC:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\variants\metro_m4" -lm  C:/sloeber-workspace/Sloeber_ImportBugToy/Release/arduino.ar  -Wl,--end-group
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Samd51_DmaTest.hex: $(ELF)
+Sloeber_ImportBugToy.hex: $(ELF)
 	@echo 'Do all objcopy commands'
 	${A.RECIPE.OBJCOPY.BIN.PATTERN}
 	${A.RECIPE.OBJCOPY.HEX.PATTERN}

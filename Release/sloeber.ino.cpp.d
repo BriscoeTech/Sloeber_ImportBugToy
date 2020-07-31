@@ -137,10 +137,10 @@ sloeber.ino.cpp.o: ..\sloeber.ino.cpp \
  C:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\cores\arduino/USB/SAMD21_USBDevice.h \
  C:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\cores\arduino/USB/USB_host.h \
  C:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\cores\arduino/USB/samd21_host.h \
- C:\Users\Scott\Documents\My\ Projects\Arduino\Cores\Adafruit\ ArduinoCore-samd\libraries\SPI/SPI.h \
- C:\Users\Scott\Documents\My\ Projects\Arduino\Cores\Adafruit\ ArduinoCore-samd\libraries\Adafruit_ZeroDMA/Adafruit_ZeroDMA.h \
- C:\Users\Scott\Documents\My\ Projects\Arduino\Cores\Adafruit\ ArduinoCore-samd\libraries\Adafruit_ZeroDMA/utility/dma.h \
- C:/Users/Scott/Documents/My\ Projects/Arduino/Cores/Adafruit\ ArduinoCore-samd/libraries/SPI/examples/zerodma_spi1/zerodma_spi1.ino
+ C:\sloeber-workspace\Sloeber_ImportBugToy\libraries\SPI/SPI.h \
+ C:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\libraries\Adafruit_ZeroDMA/Adafruit_ZeroDMA.h \
+ C:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\libraries\Adafruit_ZeroDMA/utility/dma.h \
+ ..\zerodma_spi1.ino
 
 C:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\cores\arduino/Arduino.h:
 
@@ -418,10 +418,10 @@ C:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\cores\arduino/US
 
 C:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\cores\arduino/USB/samd21_host.h:
 
-C:\Users\Scott\Documents\My\ Projects\Arduino\Cores\Adafruit\ ArduinoCore-samd\libraries\SPI/SPI.h:
+C:\sloeber-workspace\Sloeber_ImportBugToy\libraries\SPI/SPI.h:
 
-C:\Users\Scott\Documents\My\ Projects\Arduino\Cores\Adafruit\ ArduinoCore-samd\libraries\Adafruit_ZeroDMA/Adafruit_ZeroDMA.h:
+C:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\libraries\Adafruit_ZeroDMA/Adafruit_ZeroDMA.h:
 
-C:\Users\Scott\Documents\My\ Projects\Arduino\Cores\Adafruit\ ArduinoCore-samd\libraries\Adafruit_ZeroDMA/utility/dma.h:
+C:\sloeber\arduinoPlugin\packages\adafruit\hardware\samd\1.5.14\libraries\Adafruit_ZeroDMA/utility/dma.h:
 
-C:/Users/Scott/Documents/My\ Projects/Arduino/Cores/Adafruit\ ArduinoCore-samd/libraries/SPI/examples/zerodma_spi1/zerodma_spi1.ino:
+..\zerodma_spi1.ino:
